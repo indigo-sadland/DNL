@@ -16,7 +16,6 @@ It aims to help in domain recon and searching for phishing sites.
                        /\   /\
                       /  \ /  \
             
-    Date must be specified
       -date string
             Registration date of domains in format yyyy.mm.dd
       -keyword string
