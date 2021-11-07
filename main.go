@@ -20,7 +20,7 @@ func Intro() {
 
 	fmt.Println(`
                                            
-		Yes, I'm a librarian. Why you ask?  
+		Yes, I'm a librarian. Why do you ask?  
 		^..^      /			                           
 		/_/\_____/                                     
 		   /\   /\
