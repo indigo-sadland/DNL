@@ -5,7 +5,7 @@ It aims to help in domain recon and searching for phishing sites.
 
 -------
 
-**Currently under development and supports searching at `.ru` segment**
+**Currently under development
 
 -------
 
@@ -21,3 +21,7 @@ It aims to help in domain recon and searching for phishing sites.
       -keyword string
             Pattern to use in search.
             Will print all domains for the given date if not specified.
+
+# Used Sources
+ - Whoistory
+ - Cubdomain
