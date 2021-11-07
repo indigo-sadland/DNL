@@ -16,17 +16,17 @@ func GetWhoistory(keyword, date string) {
 
 	baseURL := "https://whoistory.com/"
 
-	split := strings.Split(date, ".")
+	splitDate := strings.Split(date, ".")
 	var correctMD []string
-	for _, d := range split {
+	for _, d := range splitDate {
 		if len (d) == 1 {
 			d = "0" + d
 		}
 		correctMD = append(correctMD, d)
 	}
 
-	trail := strings.Join(correctMD, "/")
-	targetURL := baseURL + trail
+	date = strings.Join(correctMD, "/")
+	targetURL := baseURL + date
 
 	// Set up http client and make request.
 	httpClient := &http.Client{}
@@ -59,8 +59,8 @@ func GetWhoistory(keyword, date string) {
 		s := strings.Split(element[n], "<br />")
 		for _, r := range s[:] {
 			if strings.Contains(r,"</h2>") {
-				split := strings.Split(r, "</h2>")
-				r = split[1]
+				splitLine := strings.Split(r, "</h2>")
+				r = splitLine[1]
 			}
 			sanitizedString := stripPolicy.Sanitize(r)
 			sanitizedString = strings.TrimPrefix(sanitizedString, "\n")
@@ -79,7 +79,7 @@ func GetWhoistory(keyword, date string) {
 		}
 	}
 
-	if matched == false {
+	if keyword != "" && matched == false {
 		fmt.Println("No domains matching the given keyword were found")
 	}
 

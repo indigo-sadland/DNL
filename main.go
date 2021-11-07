@@ -3,6 +3,7 @@ package main
 import (
 	"flag"
 	"fmt"
+	"github.com/indigo-sadland/dnl/cubdomain"
 	"github.com/indigo-sadland/dnl/whoistory"
 	"os"
 	"regexp"
@@ -51,9 +52,11 @@ func init() {
 		os.Exit(1)
 	}
 
+
 }
 
 func main()  {
 
+	cubdomain.GetCubdomain(*keyword, *date)
 	whoistory.GetWhoistory(*keyword, *date)
 }
