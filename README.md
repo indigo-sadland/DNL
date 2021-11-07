@@ -5,7 +5,7 @@ It aims to help in domain recon and searching for phishing sites.
 
 -------
 
-**Currently under development
+**Currently under development**
 
 -------
 
