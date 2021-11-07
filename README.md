@@ -10,7 +10,7 @@ It aims to help in domain recon and searching for phishing sites.
 -------
 
 # Usage
-                    Yes, I'm a librarian. Why you ask?  
+                    Yes, I'm a librarian. Why do you ask?  
                     ^..^      /                                                
                     /_/\_____/                                     
                        /\   /\
